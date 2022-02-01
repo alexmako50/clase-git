@@ -1,7 +1,8 @@
 Consejos Git
     - Siempre hay que pasar los archivos al area de staging antes de hacer commit
     - La clave SSH se guarda en usuarios, se puede acceder rapido abriendo el git bash y usando cd ".ssh"
-        despues de usar "ls", la clave de la izquierda es la privada, la de la derecha la publicagit 
+        despues de usar "ls", la clave de la izquierda es la privada, la de la derecha la publicagit
+    - Para recuperar los archivos desde github hay que darle al boton de code en la pagina de hithub y copiar la linea de SSH 
 Comandos terminal
     Ctrl + L --> limpiar terminal
 Comandos Linux
@@ -24,8 +25,11 @@ Comandos Git
             add . --> agrega todos los archivos del directorio
         commit -m "comentario" --> confirma la actualizacion de todos los archivos en el area de staging
         log --> ver informacion sobre los commits
-        checkout "id-commit" --> regresa o avanza entre versiones de los commit (osea, entre commit hechos antes o despues del actual)
+        checkout "id-commit o nombre-rama" --> regresa o avanza entre versiones de los commit (osea, entre commit hechos antes o despues del actual)
             checkout master --> vuelve al ultimo commit
+        checkout -b "nombre-rama" --> crea una rama y se mueve hacia ella
+            -b -->  hace referencia a branch (rama)
+        branch --> ver las ramas
         reset "id-commit" --> vuelve al commit especificado, borrando los posteriores (sin contar la carpeta en la que se trabaja)
             reset --hard "id-commit" --> vuelve al commit especificado, borrando los posteriores (incluyendo los cambios en la carpeta)
         --oneline --> muestra la informacion en una sola linea
@@ -34,12 +38,13 @@ Comandos Git
             remote --> hace referencia al repositorio remoto (repositorio de github)
             origin --> nombre del servidor, usado para resumir el "url-repositorio"
         push --> sube el repositorio a github
-            -u origin master --> en caso de ser la primera vez, se indica cual es la rama origen
+            -u origin master --> en caso de ser la primera vez, se indica la rama que se quiere crear
                 -u = --set-upstream
+                -u origin "nombre-rama" --> se crea una rama en el repositorio remoto y se mueven los archivos hacia ella
 Git en visual studio
     "M" --> Archivo modificado
     "U" --> Archivo untracked
-asadaa
+
 
 
 

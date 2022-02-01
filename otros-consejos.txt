@@ -1,0 +1,1 @@
+- En HTML <script> se le puede colocar "defer" para que cargue despues del HTML
