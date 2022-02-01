@@ -30,6 +30,7 @@ Comandos Git
         checkout -b "nombre-rama" --> crea una rama y se mueve hacia ella
             -b -->  hace referencia a branch (rama)
         branch --> ver las ramas
+            branch -d --> borrar rama
         reset "id-commit" --> vuelve al commit especificado, borrando los posteriores (sin contar la carpeta en la que se trabaja)
             reset --hard "id-commit" --> vuelve al commit especificado, borrando los posteriores (incluyendo los cambios en la carpeta)
         --oneline --> muestra la informacion en una sola linea
@@ -41,6 +42,7 @@ Comandos Git
             -u origin master --> en caso de ser la primera vez, se indica la rama que se quiere crear
                 -u = --set-upstream
                 -u origin "nombre-rama" --> se crea una rama en el repositorio remoto y se mueven los archivos hacia ella
+        --graph --> muestra la informacion en forma de grafico, mostrando todas las ramas del repositorio
 Git en visual studio
     "M" --> Archivo modificado
     "U" --> Archivo untracked
